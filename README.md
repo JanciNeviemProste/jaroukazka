@@ -1,6 +1,6 @@
-# 🛍️ Moderný E-shop Frontend
+# 🏥 Sestrickovo - E-shop so zdravotníckym oblečením
 
-Moderný, responzívny frontend e-shopu vytvorený s React, TypeScript a Tailwind CSS. Projekt je navrhnutý s dôrazom na čistý dizajn, prístupnosť a výbornú používateľskú skúsenosť.
+Moderný, responzívny frontend e-shopu so zdravotníckym oblečením pre sestričky vytvorený s React, TypeScript a Tailwind CSS. Projekt je navrhnutý s dôrazom na čistý dizajn, prístupnosť a výbornú používateľskú skúsenosť.
 
 ## 🚀 Rýchly štart
 
@@ -107,8 +107,9 @@ Odporúčame testovať s:
 ## 📦 Dáta
 
 Aplikácia používa **lokálne dáta** bez potreby backendu:
-- 20 dummy produktov v `src/data/products.ts`
-- Produkty obsahujú: názov, cenu, rating, kategóriu, tagy, varianty
+- 20 produktov zdravotníckeho oblečenia v `src/data/products.ts`
+- Kategórie: Blúzky, Nohavice, Plášte, Obuv, Doplnky
+- Produkty obsahujú: názov, cenu, rating, kategóriu, tagy, varianty (veľkosti, farby)
 - Všetky operácie (vyhľadávanie, filtrovanie) prebiehajú na klientovi
 
 ## 🔧 Konfigurácia
@@ -132,6 +133,7 @@ Striktná konfigurácia pre lepšiu typovú bezpečnosť:
 - **Bez backendu** - všetko beží na frontende
 - **Bez reálnych platieb** - len UI mockup
 - **Lokalizácia** - aplikácia je v slovenčine
+- **Zameranie** - špecializovaný e-shop na zdravotnícke oblečenie pre sestričky
 - **Inšpirácia** - vzdušný dizajn inšpirovaný modernými e-shopmi
 
 ## 🚢 Deployment

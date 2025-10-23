@@ -141,7 +141,7 @@ function App() {
               <div>
                 <h3 className="font-bold text-gray-900 mb-4">O nás</h3>
                 <p className="text-gray-600 text-sm">
-                  Váš spoľahlivý partner pre kvalitné produkty a skvelé ceny.
+                  Špecializujeme sa na kvalitné zdravotnícke oblečenie pre sestričky a zdravotný personál. Pohodlie a štýl pre vašu prácu.
                 </p>
               </div>
               <div>
@@ -169,17 +169,22 @@ function App() {
                 <ul className="space-y-2 text-sm">
                   <li>
                     <a href="/" className="text-gray-600 hover:text-primary-600">
-                      Elektronika
+                      Blúzky
                     </a>
                   </li>
                   <li>
                     <a href="/" className="text-gray-600 hover:text-primary-600">
-                      Domácnosť
+                      Nohavice
                     </a>
                   </li>
                   <li>
                     <a href="/" className="text-gray-600 hover:text-primary-600">
-                      Šport
+                      Plášte
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/" className="text-gray-600 hover:text-primary-600">
+                      Obuv
                     </a>
                   </li>
                 </ul>
@@ -213,13 +218,13 @@ function App() {
                     >
                       <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
-                    info@modernshop.sk
+                    info@sestrickovo.sk
                   </li>
                 </ul>
               </div>
             </div>
             <div className="border-t mt-8 pt-8 text-center text-sm text-gray-600">
-              <p>&copy; 2024 ModernShop. Všetky práva vyhradené.</p>
+              <p>&copy; 2024 Sestrickovo. Všetky práva vyhradené.</p>
             </div>
           </div>
         </footer>

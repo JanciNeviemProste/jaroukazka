@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch, cartItemsCount, onCartClick }
             to="/"
             className="flex-shrink-0 text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
           >
-            ModernShop
+            Sestrickovo
           </Link>
 
           {/* Search Bar */}
