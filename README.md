@@ -1,6 +1,6 @@
-# 🏥 Sestrickovo - E-shop so zdravotníckym oblečením
+# 🏥 Zdravotnícky Šatník - Profesionálny e-shop so zdravotníckym oblečením
 
-Moderný, responzívny frontend e-shopu so zdravotníckym oblečením pre sestričky vytvorený s React, TypeScript a Tailwind CSS. Projekt je navrhnutý s dôrazom na čistý dizajn, prístupnosť a výbornú používateľskú skúsenosť.
+Moderný, responzívny e-shop so zdravotníckym oblečením inšpirovaný medicalwardrobe.com. Vytvorený s React, TypeScript a Tailwind CSS. Projekt spája funkčnosť, komfort a moderný dizajn s dôrazom na rýchlosť načítania a výbornú používateľskú skúsenosť.
 
 ## 🚀 Rýchly štart
 
@@ -107,8 +107,8 @@ Odporúčame testovať s:
 ## 📦 Dáta
 
 Aplikácia používa **lokálne dáta** bez potreby backendu:
-- 20 produktov zdravotníckeho oblečenia v `src/data/products.ts`
-- Kategórie: Blúzky, Nohavice, Plášte, Obuv, Doplnky
+- 20+ produktov zdravotníckeho oblečenia v `src/data/products.ts`
+- Kategórie: Súpravy, Plášte, Košele/Topy, Tričká/Polo, Nohavice, Doplnky
 - Produkty obsahujú: názov, cenu, rating, kategóriu, tagy, varianty (veľkosti, farby)
 - Všetky operácie (vyhľadávanie, filtrovanie) prebiehajú na klientovi
 

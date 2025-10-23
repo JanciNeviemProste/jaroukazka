@@ -12,6 +12,9 @@ import Filters from '../components/Filters';
 import Pagination from '../components/Pagination';
 import EmptyState from '../components/EmptyState';
 import Breadcrumbs from '../components/Breadcrumbs';
+import USPSection from '../components/USPSection';
+import HeroSlider from '../components/HeroSlider';
+import BestsellersSection from '../components/BestsellersSection';
 
 interface HomeProps {
   searchQuery: string;
@@ -129,6 +132,9 @@ const Home: React.FC<HomeProps> = ({ searchQuery, onAddToCart }) => {
 
   return (
     <div className="min-h-screen bg-gradient-subtle">
+      {/* Hero Slider - Full Width */}
+      <HeroSlider />
+
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumbs */}
         <Breadcrumbs items={breadcrumbs} className="mb-6" />
@@ -136,12 +142,21 @@ const Home: React.FC<HomeProps> = ({ searchQuery, onAddToCart }) => {
         {/* Page Title */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Zdravotnícke oblečenie pre sestričky
+            Zdravotnícky Šatník - štýl má význam
           </h1>
           <p className="text-gray-600">
-            Objavte našu širokú ponuku pohodlného a štýlového oblečenia pre zdravotný personál
+            Moderné zdravotnícke oblečenie spojujúce funkčnosť, komfort a dizajn. Certifikované, priedušné a odolné materiály.
           </p>
         </div>
+      </div>
+
+      {/* USP/Benefits Section - Full Width */}
+      <USPSection />
+
+      {/* Bestsellers Section - Full Width */}
+      <BestsellersSection products={allProducts} onAddToCart={onAddToCart} />
+
+      <div className="container mx-auto px-4 py-8" id="products-section">
 
         {/* Search Results Announcement */}
         {searchQuery && (

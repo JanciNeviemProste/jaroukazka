@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
 import { cn } from '../utils/cn';
@@ -10,8 +10,42 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ onSearch, cartItemsCount, onCartClick }) => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Ak sme na vrchu stránky, vždy zobraziť header
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      }
+      // Ak scrollujeme dole a sme viac ako 50px od vrchu, skryť header
+      else if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        setIsVisible(false);
+      }
+      // Ak scrollujeme hore, zobraziť header
+      else if (currentScrollY < lastScrollY) {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <header
+      className={cn(
+        "sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-transform duration-300",
+        isVisible ? "translate-y-0" : "-translate-y-full"
+      )}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between gap-4">
           {/* Logo */}
@@ -19,7 +53,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch, cartItemsCount, onCartClick }
             to="/"
             className="flex-shrink-0 text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
           >
-            Sestrickovo
+            Zdravotnícky Šatník
           </Link>
 
           {/* Search Bar */}
