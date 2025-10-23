@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { products } from '../data/products';
 import { Product } from '../types';
 import { formatPrice, calculateDiscount, formatDiscountPercentage } from '../utils/price';
